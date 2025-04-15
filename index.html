@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Header Styles */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #f8f9fa;
+        }
+        
+        .brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+        
+        /* Welcome Section Styles */
+        .welcome-section {
+            display: flex;
+            padding: 50px;
+            align-items: center;
+        }
+        
+        .welcome-content {
+            flex: 1;
+            padding-right: 30px;
+        }
+        
+        .welcome-image {
+            flex: 1;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        
+        /* Biodata Section Styles */
+        .biodata-section {
+            padding: 50px;
+            background-color: #f8f9fa;
+        }
+        
+        .biodata-boxes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        
+        .biodata-box {
+            width: 30%;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        /* Portfolio Section Styles */
+        .portfolio-section {
+            padding: 50px;
+        }
+        
+        .portfolio-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .portfolio-table td {
+            width: 33.33%;
+            padding: 15px;
+            vertical-align: top;
+        }
+        
+        .portfolio-item img {
+            width: 100%;
+            max-width: 350px;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .portfolio-item h3 {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Section 1: Header -->
+    <div class="header">
+        <div class="brand">MyBrand</div>
+        <div class="nav">
+            <a href="#header">Header</a>
+            <a href="#biodata">Biodata</a>
+            <a href="#portfolio">Portfolio</a>
+        </div>
+    </div>
+    
+    <!-- Section 2: Welcome Section -->
+    <div class="welcome-section" id="header">
+        <div class="welcome-content">
+            <h1>Selamat Datang</h1>
+            <p>
+                Selamat datang di website personal saya. Di sini Anda dapat menemukan informasi tentang saya, 
+                pengalaman kerja, pendidikan, dan proyek-proyek yang telah saya kerjakan. Saya senang berbagi 
+                pengetahuan dan pengalaman dengan orang lain. Silakan jelajahi website ini untuk mengenal saya lebih jauh.
+            </p>
+            <a href="#" class="btn">Pelajari Lebih Lanjut</a>
+        </div>
+        <div class="welcome-image">
+            <img src="./welcome.png" alt="Welcome Image" width="600" height="400">
+        </div>
+    </div>
+    
+    <!-- Section 3: Biodata -->
+    <div class="biodata-section" id="biodata">
+        <h1>Biodata</h1>
+        <p>
+            Saya adalah seorang profesional yang berdedikasi dalam bidang pengembangan web. 
+            Dengan pengalaman lebih dari 5 tahun, saya telah mengerjakan berbagai proyek dari skala kecil hingga enterprise. 
+            Saya selalu berusaha untuk terus belajar dan mengembangkan keterampilan saya dalam teknologi terbaru.
+        </p>
+        
+        <div class="biodata-boxes">
+            <div class="biodata-box">
+                <h3>Full Name</h3>
+                <p>Yusup Muhamad</p>
+            </div>
+            <div class="biodata-box">
+                <h3>Education</h3>
+                <p>S1 Teknik Informatika, Institut Teknologi Garut</p>
+            </div>
+            <div class="biodata-box">
+                <h3>Pekerjaan</h3>
+                <p>Web Developer di IT TRAH Tech Soluions</p>
+            </div>
+            <div class="biodata-box">
+                <h3>Contact</h3>
+                <p>Email: ymuhammad.9d.1718@gmail.com<br>Phone: +62 819 1281 12802</p>
+            </div>
+            <div class="biodata-box">
+                <h3>Hobby</h3>
+                <p>Membaca, Traveling, Fotografi</p>
+            </div>
+            <div class="biodata-box">
+                <h3>Alamat</h3>
+                <p>Bandung</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Section 4: Portfolio -->
+    <div class="portfolio-section" id="portfolio">
+        <h1>Portfolio</h1>
+        
+        <table class="portfolio-table">
+            <tr>
+                <td>
+                    <div class="portfolio-item">
+                        <img src="https://prismalink.co.id/wp-content/uploads/2024/04/Landing-Page.png" alt="Project 1">
+                        <h3>E-Commerce Website</h3>
+                        <p>Pengembangan website e-commerce dengan fitur pembayaran online, manajemen produk, dan sistem pelacakan pesanan.</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="portfolio-item">
+                        <img src="https://www.sws.co.id/wp-content/uploads/2021/06/contoh-landing-page.jpg" alt="Project 2">
+                        <h3>Mobile Banking App</h3>
+                        <p>Aplikasi perbankan mobile dengan fitur transfer, pembayaran tagihan, dan manajemen keuangan pribadi.</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="portfolio-item">
+                        <img src="https://vocasia.id/blog/wp-content/uploads/2021/12/contoh-landing-page-menarik.jpg" alt="Project 3">
+                        <h3>Company Profile Website</h3>
+                        <p>Website profil perusahaan responsif dengan desain modern dan integrasi media sosial.</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
